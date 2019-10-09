@@ -1,0 +1,89 @@
+.script {
+	border : 5px solid green;
+	background-color: white;
+}
+
+.title {
+	border : 5px solid red;
+	text-align: right;
+}
+
+.title h2 {
+	border : 5px solid orange;
+}
+
+.favorite {
+	border : 5px solid blue;
+	background-color: #99CCFF;
+	padding: 5px;
+	margin-top: 10px;
+	overflow: hidden;
+	text-align : justify;
+}
+
+.contents{
+	overflow: hidden;
+}
+
+.subject {
+	border : 5px solid purple;
+}
+
+body{
+	margin-left: 10%;
+	margin-right: 10%;
+	background-image: url("https://selab.hanyang.ac.kr/courses/cse326/2019/labs/images/3/blueTextureBG.jpg");
+}
+
+.favorite h2 {
+	clear: right;
+}
+.favorite img {
+	float:right;
+}
+
+.script {
+	border : 10px solid white;
+	background-color: white;
+}
+
+
+.favorite {
+	border : 4px solid #1D2475;
+	background-color: #99CCFF;
+	padding: 5px;
+	margin-top: 10px;
+	overflow: hidden;
+	text-align : justify;
+	border-radius: 15px;
+}
+.subject{
+	border : none;
+	border-bottom: 2px blue dashed;
+}
+.title{
+	background-color: #1D2475;
+	color : white;
+	border : none;
+}
+.title h2{
+	border : none;
+	font-size: 14pt;
+	color:#CCCCCC;
+}
+.link {
+	float : left;
+	background-color: #3366CC;
+	margin-right: 10px;
+	margin-top: 10px;
+	padding : 5px;
+	border : 4px solid #1D2475 ;
+	border-radius: 15px;
+	color:#CCCCCC;
+	width : 150px;
+}
+
+*:not(.script):not(.title):not(.link):not(.contents):not(.favorite):not(.validator):not(html):hover {
+	background-color:#A6CE39;
+}
+
