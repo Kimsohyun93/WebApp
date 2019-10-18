@@ -1,0 +1,124 @@
+body {
+	background-image: url("background.png");
+	font-size : 8pt;
+	font-family: Verdana, Tahoma, sans-serif ;
+	margin : 0px;
+	padding: 0px;
+
+}
+#banner {
+	background-image: url("bannerbg.png");
+	height: 50px;
+	text-align : center;
+}
+
+h1 {
+	font-size : 24pt;
+	text-align: center;
+	font-family: Tahoma, Verdana, sans-serif ;
+	text-shadow : 3px 3px #999999;
+}
+main {
+	width : 800px;
+	margin-right: auto;
+	margin-left: auto;
+	border : 4px gray solid;
+	border-radius: 20px;
+	overflow : hidden;
+}
+
+article {
+	width : 550px;
+	float: left;
+	overflow : hidden;
+	background-color: none;
+}
+#bigrotten {
+	text-align: left;
+	background-image: url("rbg.png");
+	font-size : 48pt;
+	font-weight : bold;
+	color : red;
+	height: 83px;
+	padding-right : 0px;
+	padding-left : 0px;
+	clear : right;
+}
+
+#bigrotten img {
+	vertical-align: bottom;
+	height: 83px;
+}
+.column1, .column2{
+	float: left;
+	margin-left: 2%;
+	width : 47%;
+}
+section {
+	overflow: hidden;
+	margin-bottom : 20pt;
+	margin-left: 0px;
+}
+section img {
+	float : left;
+	padding-right: 5px;
+}
+
+section p:first-child {
+	padding: 8px;
+	border : 2px solid gray;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 8pt;
+	background-color :#E8DC9B; 
+}
+section p:nth-child(2) .name{
+	font-style: italic;
+}
+p {
+	overflow: hidden;
+}
+p img {
+	float : left;
+	margin-right: 5px;
+}
+aside {
+	float : right;
+	width: 250px;
+	background-color: #A2B964;
+	overflow : hidden;
+	font-size: 8pt;
+	font-family: Arial, sans-serif;
+}
+aside dl{
+	margin : 10px;
+}
+
+dl dt{
+	font-weight: bold;
+	margin-top: 10pt;
+}
+
+dl ul{
+	list-style: none;
+	padding-left: 0pt;
+}
+footer{
+	background-color: #A2B964;
+	margin-top: 0px;
+	padding : 5px;
+	text-align: center;
+	clear : both;
+	position : bottom;
+}
+footer p {
+	margin : 0px;
+}
+
+.validation{
+	position : fixed;
+	bottom:0px;
+	right:0px;
+	opacity: 0.50;
+
+}
