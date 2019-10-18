@@ -31,7 +31,6 @@ article {
 	width : 550px;
 	float: left;
 	overflow : hidden;
-	background-color: none;
 }
 #bigrotten {
 	text-align: left;
@@ -105,11 +104,11 @@ dl ul{
 }
 footer{
 	background-color: #A2B964;
-	margin-top: 0px;
+	margin: 0px;
 	padding : 5px;
 	text-align: center;
 	clear : both;
-	position : bottom;
+	bottom:0px;
 }
 footer p {
 	margin : 0px;
