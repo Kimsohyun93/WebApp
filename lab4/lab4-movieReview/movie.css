@@ -70,6 +70,7 @@ section p:first-child {
 	font-weight: bold;
 	font-size: 8pt;
 	background-color :#E8DC9B; 
+	margin-top: 0px;
 }
 section p:nth-child(2) .name{
 	font-style: italic;
@@ -89,8 +90,8 @@ aside {
 	font-size: 8pt;
 	font-family: Arial, sans-serif;
 }
-aside dl{
-	margin : 10px;
+dl{
+	margin : 10pt;
 }
 
 dl dt{
