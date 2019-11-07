@@ -30,8 +30,9 @@
 			
 			<ol>			
 			<?php
-				// $newspages = isset($_GET["newspages"]) ? $_GET["newspages"] : 5;
-				for($news_pages=11; $news_pages>(11-$newspages); $news_pages--){ ?>
+				$newspages = isset($_GET["newspages"]) ? $_GET["newspages"] : 5;
+
+				for($news_pages = 11; $news_pages>(11-$newspages); $news_pages--){ ?>
 					<li><a href="https://www.billboard.com/archive/article/2019<?= sprintf('%02d',$news_pages) ?>">2019-<?= sprintf('%02d',$news_pages) ?></a></li>
 			<?php	} ?>
 
@@ -47,11 +48,16 @@
 		<!-- Ex 5: Favorite Artists from a File (Files) -->
 		<div class="section">
 			<h2>My Favorite Artists</h2>
-		
+
 			<ol>
-				<li>Guns N' Roses</li>
+			<?php
+				$fav_artst =file("favorite.txt");
+				foreach($fav_artst as $fav_artst){ ?>
+					<li><a href="https://en.wikipedia.org/wiki/<?= $fav_artst?>"><?= $fav_artst ?></a></li>
+			<?php	} ?>
+<!-- 				<li>Guns N' Roses</li>
 				<li>Green Day</li>
-				<li>Blink182</li>
+				<li>Blink182</li> -->
 			</ol>
 		</div>
 		
@@ -61,18 +67,30 @@
 			<h2>My Music and Playlists</h2>
 
 			<ul id="musiclist">
-				<li class="mp3item">
-					<a href="lab5/musicPHP/songs/paradise-city.mp3">paradise-city.mp3</a>
-				</li>
+
+				<?php
+					$zip = new ZipArchive();
+					$zip->open("music.zip");
+					$zip->extractTo("lab5/musicPHP/songs/");
+					$zip->close();
+					$music = glob("lab5/musicPHP/songs/*.mp3");
+					foreach($music as $music){ ?>
+						<li class="mp3item">
+							<a href="<?= $music ?>"><?= {$music}filesize($music) ?></a>
+						</li>
+
+				<?php	}
+				?>
+
 				
-				<li class="mp3item">
+				<!-- <li class="mp3item">
 					<a href="lab5/musicPHP/songs/basket-case.mp3">basket-case.mp3</a>
 				</li>
 
 				<li class="mp3item">
 					<a href="lab5/musicPHP/songs/all-the-small-things.mp3">all-the-small-things.mp3</a>
 				</li>
-
+ -->
 				<!-- Exercise 8: Playlists (Files) -->
 				<li class="playlistitem">326-13f-mix.m3u:
 					<ul>
