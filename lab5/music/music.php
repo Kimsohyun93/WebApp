@@ -76,7 +76,7 @@
 					$music = glob("lab5/musicPHP/songs/*.mp3");
 					foreach($music as $music){ ?>
 						<li class="mp3item">
-							<a href="<?= $music ?>"><?= {$music}filesize($music) ?></a>
+							<a href="<?= $music ?>"><?= $music ?></a>
 						</li>
 
 				<?php	}
